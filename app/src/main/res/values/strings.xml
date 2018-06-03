@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyAssist</string>
+
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string-array name="bookmark_titles">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Gmail</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

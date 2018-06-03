@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.saveetha.ticket.Activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_below="@+id/title"
+            android:paddingStart="10dp"
+            android:layout_width="wrap_content"
+            android:queryBackground="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:layout_weight="2"
+            android:layout_marginRight="0dp"
+            android:paddingLeft="-15dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Enter your destination"/>
+
+        <ImageButton
+            android:id="@+id/search_voice_btn"
+            android:padding="10dp"
+            android:background="@drawable/ic_mic"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+    <ListView
+
+        android:id="@+id/listView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>
